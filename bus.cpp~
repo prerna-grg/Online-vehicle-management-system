@@ -1,0 +1,54 @@
+#include <iostream>
+#include "bus.h"
+using namespace std;
+
+// CONSTRUCTOR WITH NO ARGUMENT
+Bus::Bus(){
+	name = "";
+	color = "";
+	mileage = 0 ;
+	topSpeed = 0;
+	numberOfGears = 0 ;
+	seats = 0;
+	book_status = 0;
+}
+
+//DESTRUCTOR
+Bus::~Bus(){}
+
+// GENERAL CONSTRUCTOR
+Bus::Bus(string s1 , string s2 , int n1 , int n2 , int n3, int n4){
+	name = s1 ;
+	color = s2 ;
+	mileage = n1 ;
+	topSpeed = n2 ;
+	numberOfGears = n3 ;
+	seats = n4 ;	
+}
+
+// THIS FUNCTION WILL SET DATA IN ANY OBJECT IRRESOECTIVE OF THE CONSTRUCTOR USED
+void Bus::setData(string s1 , string s2 , int i1 , int i2 , int i3 , int i4){
+	name = s1 ;
+	color = s2 ;
+	mileage = i1 ;
+	topSpeed = i2 ;
+	numberOfGears = i3 ;
+	seats = i4;
+}
+
+// PRINTS THE DATA IN THE CONSOLE 
+void Bus::printData(){
+	cout << "Name: " << name << endl;
+	cout << "Color: " << color << endl;
+	cout << "Mileage: " << mileage << endl;
+	cout << "Number of gears: " << numberOfGears << endl;
+	cout << "Top Speed: " << topSpeed << endl;
+	cout << "Seats: " << seats << endl ;
+}
+
+// CHECKS WHETHER THE INPUT BUS HAS GREATER NUMBER OF SEATS THAN THE ONE THAT IS BEING CHECKED
+int Bus::checkSort(Bus B){
+	if( (seats-B.seats)>=0 )return 1 ;
+	else return 0 ;
+}
+

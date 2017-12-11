@@ -1,0 +1,30 @@
+STEPS TO COMPILE THE CODE ARE AS FOLLOWS :
+
+go to the directory where the folder has been saved and type the given commands...
+Let's say Desktop is the directory
+Folder name is 2016csb1050
+
+
+
+
+COMMANDS: 
+
+cd Desktop/2016csb1050/
+make clean
+make
+./output
+
+
+
+
+GENERAL CODE DESCRIPTION :
+--> my main function solves 3 purposes : 
+	1) takes inputs from the user
+	2) prints output in the console window
+	3) makes appropriate function calls as per the functionality demanded by the user
+	
+--> list.h car.h bus.h truck.h have all the respective function declarations
+--> my list.cpp contains entire function definitions that are applicable on my linked lists
+--> car.cpp bus.cpp truck.cpp contain function definitions applicable on cars/trucks/buses
+
+--> In case you give wrong inputs i.e if you enter string when asked for integer .. the program will terminate 
